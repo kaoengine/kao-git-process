@@ -16,23 +16,37 @@
 ## Merge a feature branch
 In this example we assume that your feature branch, myfeature, is based off develop and that you are currently in your feature branch.
 
-1. Squash/reword/edit any commits if need be
-    > git rebase -i develop
-2. Rebase your feature branch on top of current develop
-    > git rebase develop
-3. Change to develop
-    > git checkout develop
-4. Fast-forward merge your feature branch into develop
-    > git merge myfeature
-5. Delete your local feature branch (see above tip for remote deletion)
-    > git branch -d myfeature
+*1. Squash/reword/edit any commits if need be*
+
+    git rebase -i develop
+*2. Rebase your feature branch on top of current develop*
+
+    git rebase develop
+*3. Change to develop*
+
+    git checkout develop
+*4. Fast-forward merge your feature branch into develop*
+
+    git merge myfeature
+*5. Delete your local feature branch (see above tip for remote deletion)*
+
+    git branch -d myfeature
 
 ## Ignore changes in a tracked file 
-1. To ignore:
-    > git update-index --assume-unchanged <tracked-file>
-2. To stop ignoring:
-    > git update-index --no-assume-unchanged <ignored-tracked-file>
+*1. To ignore:*
+
+    git update-index --assume-unchanged <tracked-file>
+
+*2. To stop ignoring:*
+
+    git update-index --no-assume-unchanged <ignored-tracked-file>
 
 ## Undo the last commit
-1. Changes are put back into staged
-    > git reset --soft HEAD~1
+*Changes are put back into staged*
+
+    git reset --soft HEAD~1
+
+## Delete the last commit
+1. All changes are lost!
+
+git reset --hard HEAD~1
