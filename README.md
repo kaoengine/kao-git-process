@@ -47,6 +47,25 @@ In this example we assume that your feature branch, myfeature, is based off deve
     git reset --soft HEAD~1
 
 ## Delete the last commit
-1. All changes are lost!
+*All changes are lost!*
 
-git reset --hard HEAD~1
+    git reset --hard HEAD~1
+
+## Stash un-tracked files
+At times you will be working on a branch with un-tracked files (new files) and you'll need to checkout master to apply a bug fix.
+
+First, add the un-tracked files to the index:
+
+    git add <un-tracked-files>
+
+Now do a regular stash:
+
+    git stash
+
+At this point you can checkout whatever branch you want and do what you need to do. When you're done, checkout your original working branch again and pop the changes from your stash:
+
+    git stash pop
+
+You can remove the files you indexed from the index if you want, as to not pollute your next commit:
+
+    git rm --cached <files>
