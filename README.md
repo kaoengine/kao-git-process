@@ -76,3 +76,21 @@ At this point you can checkout whatever branch you want and do what you need to 
 You can remove the files you indexed from the index if you want, as to not pollute your next commit:
 
     git rm --cached <files>
+
+
+## Merge a remote branch
+First, add the repo:
+
+git remote add <reponame> <location>
+
+Now fetch in the changes:
+
+git fetch <reponame>
+
+You'll want to do a diff against your branch to see what will be merged:
+
+git diff master <reponame>/<branch>
+
+If you're happy with the changes, go ahead and merge it:
+
+git merge <reponame>/<branch>
