@@ -32,3 +32,7 @@ In this example we assume that your feature branch, myfeature, is based off deve
     > git update-index --assume-unchanged <tracked-file>
 2. To stop ignoring:
     > git update-index --no-assume-unchanged <ignored-tracked-file>
+
+## Undo the last commit
+1. Changes are put back into staged
+    > git reset --soft HEAD~1
