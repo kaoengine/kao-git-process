@@ -97,8 +97,27 @@ git merge <reponame>/<branch>
 
 ## Delete a remote branch
 
-git push <repo> :<branch>
+    git push <repo> :<branch>
 
 or
 
-git push --delete <repo> <branch>
+    git push --delete <repo> <branch>
+
+## Apply a commit to multiple branches with cherry-pick
+This technique uses cherry-pick to apply commits to branches that differ too much to use merge.
+
+Checkout master branch
+
+    git checkout master
+
+Make commit
+
+    git commit -m "Fixed the bug that caused issue xyz"
+
+Checkout stable branch
+
+    git checkout stable
+
+Apply the last commit from master to this branch
+
+    git cherry-pick master
