@@ -121,3 +121,35 @@ Checkout stable branch
 Apply the last commit from master to this branch
 
     git cherry-pick master
+
+## Commit Messages
+Based on ​git commit guidelines and ​How to Write a Git Commit Message.
+
+The short answer on the golden rule for git commit subject lines is to you ask yourself:
+
+**If applied, this commit will.**.. `<your commit subject line here>`
+
+e.g. If applied, this commit will `Enable editing of torrent names in Add Dialog`
+
+A general guideline on writing a good commit message is to provide information that is not already provided from the commit diff, which in essence is "the why, not the how".
+
+* Explain why the change is necessary
+    *  After reading the commit message it should should be apparent why the changes were made.
+* Explain how the issue is addressed in broad terms
+    *  It is not necessary to explain how the changes are made in detail as that can be seen from the commit diff.
+Example commit message:
+```
+    Short summary of changes (preferably 50 characters or less)
+
+    More detailed explanatory text, if necessary.  Wrap it to about 72
+    characters or so. The first line can be considered as the subject of an
+    email and the rest of the text as the body. The blank line separating
+    the summary from the body is critical, unless you omit the body entirely.
+
+    Further paragraphs come after blank lines.
+
+    - Bullet points are okay, too
+
+    - Typically a hyphen or asterisk is used for the bullet, preceded by a
+        single space, with blank lines in between, but conventions vary here
+```
