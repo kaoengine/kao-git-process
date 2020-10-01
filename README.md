@@ -94,3 +94,11 @@ git diff master <reponame>/<branch>
 If you're happy with the changes, go ahead and merge it:
 
 git merge <reponame>/<branch>
+
+## Delete a remote branch
+
+git push <repo> :<branch>
+
+or
+
+git push --delete <repo> <branch>
