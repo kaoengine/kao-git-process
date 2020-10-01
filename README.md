@@ -1,4 +1,11 @@
-# kao-git-process
+<div align="center">
+<img style="width: 100px;height: 100px;margin: auto;" src="https://avatars2.githubusercontent.com/u/62488287?s=200&amp;v=4">
+
+# 🐱‍💻Git-Tips
+## 🚧🚧🚧 UNDER CONSTRUCTION 🚧🚧🚧
+
+
+</div>
 
 ## Tips
 
