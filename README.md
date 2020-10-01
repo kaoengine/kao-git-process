@@ -27,7 +27,7 @@ In this example we assume that your feature branch, myfeature, is based off deve
 5. Delete your local feature branch (see above tip for remote deletion)
     > git branch -d myfeature
 
-## Ignore changes in a tracked file ¶
+## Ignore changes in a tracked file 
 1. To ignore:
     > git update-index --assume-unchanged <tracked-file>
 2. To stop ignoring:
