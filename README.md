@@ -9,16 +9,16 @@
 
 ## Tips
 
-- Merge a feature branch
-- Ignore changes in a tracked file
-- Undo the last commit
-- Delete the last commit
-- Stash untracked files
-- Merge a remote branch
-- Delete a remote branch
-- Apply a commit to multiple branches with cherry-pick
-- Commit Messages
-- This page is a collection of useful git tips.
+- [Merge a feature branch](#merge-a-feature-branch)
+- [Ignore changes in a tracked file](#Ignore-changes-in-a-tracked-file)
+- [Undo the last commit](#Undo-the-last-commit)
+- [Delete the last commit](#Delete-the-last-commit)
+- [Stash untracked files](#Stash-untracked-files)
+- [Merge a remote branch](#Merge-a-remote-branch)
+- [Delete a remote branch](#Delete-a-remote-branch)
+- [Apply a commit to multiple branches with cherry-pick](#Apply-a-commit-to-multiple-branches-with-cherry-pick)
+- [Commit Messages](#Commit-Messages)
+- [This page is a collection of useful git tips.](#This-page-is-a-collection-of-useful-git-tips.)
 
 ## Merge a feature branch
 In this example we assume that your feature branch, myfeature, is based off develop and that you are currently in your feature branch.
@@ -78,7 +78,7 @@ You can remove the files you indexed from the index if you want, as to not pollu
     git rm --cached <files>
 
 
-## Merge a remote branch
+## Merge a remote branc
 First, add the repo:
 
     git remote add <reponame> <location>
