@@ -81,19 +81,19 @@ You can remove the files you indexed from the index if you want, as to not pollu
 ## Merge a remote branch
 First, add the repo:
 
-git remote add <reponame> <location>
+    git remote add <reponame> <location>
 
 Now fetch in the changes:
 
-git fetch <reponame>
+    git fetch <reponame>
 
 You'll want to do a diff against your branch to see what will be merged:
 
-git diff master <reponame>/<branch>
+    git diff master <reponame>/<branch>
 
 If you're happy with the changes, go ahead and merge it:
 
-git merge <reponame>/<branch>
+    git merge <reponame>/<branch>
 
 ## Delete a remote branch
 
