@@ -124,7 +124,7 @@ Apply the last commit from master to this branch
     git cherry-pick master
 
 ## Commit Messages
-Based on ​git commit guidelines and ​[How to Write a Git Commit Message](./how-to-write-commit.md).
+Based on ​git [commit guidelines](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#Commit-Guidelines) and ​[How to Write a Git Commit Message](./how-to-write-commit.md).
 
 The short answer on the golden rule for git commit subject lines is to you ask yourself:
 
